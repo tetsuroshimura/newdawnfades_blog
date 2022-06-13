@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap');
+
+/* .Article {
+  border-radius: 4px;
+} */
+.Article_Link {
+  padding: 0;
+  line-height: 1.5;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+}
+/* .Article_Inner {
+} */
+.Article_Title {
+  font-size: clamp(1.4rem, 1.27rem + 0.65vw, 2.4rem);
+  font-weight: 400;
+  font-family: 'Noto Serif JP',"Segoe UI Emoji", "Helvetica Neue", Arial,
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  border-bottom: solid 1px #000000;
+  margin-bottom: 10px;
+}
+/* .Article_Content {
+  margin: auto 0 0 0;
+  display: flex;
+  align-items: center;
+} */
+.Article_Data {
+  display: flex;
+  align-items: center;
+  font-family: 'Ghost','Noto Sans JP',"Segoe UI Emoji", "Helvetica Neue", Arial,
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+.Article_AuthorName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.Article_Date {
+  font-size: clamp(1rem, 0.649rem + 0.76vw, 1.4rem);
+}
+.Article_Fav {
+  margin: 0 8px 0 auto;
+  display: flex;
+  align-items: center;
+}
+.Article_Fav > em {
+  font-size: 1.2rem;
+  font-style: normal;
+  margin: 0 0 0 4px;
+  color: #888;
+}
+/* @media (min-width: 600px) {
+  .Article {
+    margin: 0 12px 24px 0;
+  }
+  .Article:nth-child(2n) {
+    margin: 0 0 24px auto;
+  }
+}
+@media (min-width: 960px) {
+  .Article {
+    margin: 0 24px 24px 0;
+  }
+  .Article:nth-child(2n) {
+    margin: 0 24px 24px 0;
+  }
+  .Article:nth-child(3n) {
+    margin: 0 0 24px 0;
+  }
+} */
