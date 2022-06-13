@@ -16,7 +16,7 @@
 .Article_Title {
   font-size: clamp(1.4rem, 1.27rem + 0.65vw, 2.4rem);
   font-weight: 400;
-  font-family: 'Noto Serif JP',"Segoe UI Emoji", "Helvetica Neue", Arial,
+  font-family: 'Noto Serif JP', "Helvetica Neue", Arial,
   "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   border-bottom: solid 1px #000000;
   margin-bottom: 10px;
