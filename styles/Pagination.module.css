@@ -1,5 +1,6 @@
 .Pagination {
   padding: 16px 0;
+  margin-top: 80px;
 }
 .Pagination_Items {
   display: flex;
@@ -13,7 +14,7 @@
 }
 .Pagination_Button {
   border: 1px solid #e5e5e5;
-  border-radius: 4px;
+  border-radius:50%;
   display: flex;
   width: 32px;
   height: 32px;

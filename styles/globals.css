@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @font-face {
   font-family: "Ghost";
-  src: url('../public/fonts/TWKGhost-Regular.woff');
+  src: url('/fonts/TWKGhost-Regular.woff');
   font-weight: 300;
   font-style: normal;
 }
