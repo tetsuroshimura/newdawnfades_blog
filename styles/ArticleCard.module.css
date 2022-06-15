@@ -17,7 +17,7 @@
   margin-bottom: 10px;
 } */
 .Article_Title {
-  font-size: clamp(1.4rem, 1.27rem + 0.65vw, 2.4rem);
+  font-size: clamp(1.8rem, 1.27rem + 0.65vw, 2.4rem);
   font-weight: 500;
   line-height: 1.8;
   font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,

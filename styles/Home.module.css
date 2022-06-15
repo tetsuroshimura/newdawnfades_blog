@@ -1,4 +1,11 @@
 .Articles {
   margin: 0 auto;
   padding: 1vw 5vw;
+  margin-top: 50px;
+}
+
+@media (max-width: 960px) {
+  .Articles {
+    margin-top: 100px;
+  }
 }
