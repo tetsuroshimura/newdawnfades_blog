@@ -45,10 +45,6 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
-.Article_Date {
-  font-size: clamp(1rem, 0.649rem + 0.76vw, 1.4rem);
-  margin-top: 1rem;
-}
 .Article_Fav {
   margin: 0 8px 0 auto;
   display: flex;
