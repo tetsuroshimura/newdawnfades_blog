@@ -11,6 +11,7 @@ export interface Article {
     ogImage: { src: string } | null;
   };
   body: string;
+  annotation: string;
   coverImage: { src: string } | null;
   author: (Content & Author) | null;
   categories: (Content & Category)[];

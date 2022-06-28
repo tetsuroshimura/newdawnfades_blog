@@ -75,6 +75,17 @@ export default function ArticlePage({
     };
   }, [currentArticle?.body]);
 
+  const annotation = useMemo(() => {
+    if (currentArticle?.annotation) {
+      return {
+        __html: currentArticle.annotation,
+      };
+    }
+    return {
+      __html: "",
+    };
+  }, [currentArticle?.annotation]);
+
   const authorIntroduction = useMemo(() => {
     if (currentArticle?.author?.biography) {
       return {
@@ -112,10 +123,16 @@ export default function ArticlePage({
             </time>
           </div>
         </div>
-        <div
-          className={styles.Article_Body}
-          dangerouslySetInnerHTML={body}
-        ></div>
+        <div className={styles.Article_Body_Wrapper}>
+          <div
+            className={styles.Article_Body}
+            dangerouslySetInnerHTML={body}
+          ></div>
+          <div
+            className={styles.Article_Annotation}
+            dangerouslySetInnerHTML={annotation}
+          ></div>
+        </div>
       </article>
     </Layout>
   );

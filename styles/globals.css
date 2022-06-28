@@ -28,8 +28,9 @@ body {
   height: 100%;
 }
 a {
-  color: #006cdc;
+  color: #000000;
   text-decoration: underline;
+  text-underline-offset: 0.1rem;
 }
 a:hover {
   text-decoration: none;
