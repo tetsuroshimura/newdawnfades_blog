@@ -114,6 +114,8 @@ export default function ArticlePage({
           <h1 className={styles.Article_Title}>
             {currentArticle?.title || ""}
           </h1>
+        </div>
+        <div className={styles.Article_Body_Wrapper}>
           <div className={styles.Article_Data}>
             <time
               dateTime={currentArticle?._sys?.createdAt}
@@ -122,8 +124,6 @@ export default function ArticlePage({
               {publishDate}
             </time>
           </div>
-        </div>
-        <div className={styles.Article_Body_Wrapper}>
           <div
             className={styles.Article_Body}
             dangerouslySetInnerHTML={body}
