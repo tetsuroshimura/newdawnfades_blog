@@ -2,14 +2,14 @@
 
 .Article {
   padding: 1vw 5vw;
-  margin-top: 200px;
+  margin-top: calc(200px + 2vw);
 }
 .Article_Header {
   margin: 0 0 24px 0;
-  margin-bottom: calc(100px + 3vw);
+  margin-bottom: calc(80px + 2vw);
 }
 .Article_Title {
-  font-size: clamp(2rem, 1.714rem + 1.43vw, 3rem);
+  font-size: clamp(2rem, 1.886rem + 0.57vw, 2.4rem);
   line-height: 1.6;
   font-weight: 500;
   margin: 0 0 16px 0;
