@@ -10,7 +10,7 @@
   row-gap: 1em;
 }
 .Articles_Inner {
-  grid-column: 3 / 10;
+  grid-column: 3 / 13;
 }
 .Index_Text {
   grid-column: 1 / 3;

@@ -20,6 +20,12 @@
   -webkit-font-feature-settings: "palt" 1;
   font-kerning: normal;
 }
+
+@media (max-width: 960px) {
+  .Article_Title {
+    font-size: 1.8rem;
+  }
+} 
 .Article_Avatar {
   width: 32px;
   height: 32px;

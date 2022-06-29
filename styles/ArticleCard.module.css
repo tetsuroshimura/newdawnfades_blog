@@ -29,6 +29,15 @@
   font-kerning: normal;
   display: inline;
 }
+
+@media (max-width: 960px) {
+  .Article {
+    margin-bottom: 20px;
+  }
+  .Article_Title {
+    font-size: 1.8rem;
+  }
+} 
 /* .Article_Content {
   margin: auto 0 0 0;
   display: flex;
