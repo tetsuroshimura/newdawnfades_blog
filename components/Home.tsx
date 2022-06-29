@@ -33,11 +33,14 @@ export function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.Articles}>
-        <Dropdown categories={categories} selected={categorySlug} />
-        <div className={styles.Inner}>
-          {articles.map((article) => (
-            <ArticleCard article={article} key={article._id} />
-          ))}
+        {/* <Dropdown categories={categories} selected={categorySlug} /> */}
+        <div className={styles.Articles_Inner_Wrapper}>
+          <div className={styles.Index_Text}>INDEX</div>
+          <div className={styles.Articles_Inner}>
+            {articles.map((article) => (
+              <ArticleCard article={article} key={article._id} />
+            ))}
+          </div>
         </div>
         <Pagination
           total={total}

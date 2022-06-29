@@ -36,6 +36,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
                 <img src={app.icon.value} alt="" />
               </span>
             )}
+            <div className={styles.Title_Text_Underline}></div>
             <div className={styles.Title_Text}>{app.name || app.uid || ""}</div>
           </a>
         </Link>
