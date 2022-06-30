@@ -9,6 +9,14 @@ import { ArticleCard } from "../components/ArticleCard";
 import { Article } from "../types/article";
 import { Pagination } from "../components/Pagination";
 
+import dynamic from 'next/dynamic'
+import p5Types from 'p5'
+
+const Sketch = dynamic(import('react-p5'), {
+  loading: () => <></>,
+  ssr: false
+})
+
 export interface HomeProps {
   app: AppMeta;
   categories: (Content & Category)[];
