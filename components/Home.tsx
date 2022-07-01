@@ -38,6 +38,12 @@ export function Home({
     <Layout app={app}>
       <Head>
         <title>{app?.name || app?.uid || ""}</title>
+        <meta name="description" content="BLOG SERVICE" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="NEW DAWN FADES" />
+        <meta property="og:description" content="BLOG SERVICE" />
+        <meta property="og:image" content="../public/ogp.png" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.Articles}>
