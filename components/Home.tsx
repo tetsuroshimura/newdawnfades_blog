@@ -42,7 +42,7 @@ export function Home({
         <meta property="og:type" content="article" />
         <meta property="og:title" content="NEW DAWN FADES" />
         <meta property="og:description" content="BLOG SERVICE" />
-        <meta property="og:image" content="../public/ogp.png" />
+        <meta property="og:image" content="https://www.newdawnfades.today/public/ogp.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
