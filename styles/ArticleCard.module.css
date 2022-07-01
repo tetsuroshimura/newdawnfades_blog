@@ -9,9 +9,10 @@
   padding: 0;
   line-height: 1.5;
   color: #000000;
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
 }
+
 /* .Article_Inner {
   display: block;
   margin-bottom: 10px;
@@ -22,12 +23,12 @@
   line-height: 1.8;
   font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,
   "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  border-bottom: solid 1px #000000;
   margin-bottom: 10px;
   font-feature-settings: "palt" 1;
   -webkit-font-feature-settings: "palt" 1;
   font-kerning: normal;
   display: inline;
+  border-bottom: solid 1px #000000;
 }
 
 @media (max-width: 960px) {
@@ -50,6 +51,7 @@
   margin-top: calc(2px + 0.2vw);
   font-variant-numeric: oldstyle-nums; 
 }
+
 .Article_AuthorName {
   font-size: 1.2rem;
   font-weight: bold;

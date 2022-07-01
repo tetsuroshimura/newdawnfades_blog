@@ -32,10 +32,6 @@ a {
   text-decoration: underline;
   text-underline-offset: 0.1rem;
 }
-a:hover {
-  text-decoration: none;
-}
-
 
 hr {
   height: 0;
