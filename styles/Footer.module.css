@@ -60,3 +60,10 @@ li.Footer_Text_List {
   color: #333;
   text-decoration: underline;
 }
+
+@media (max-width: 960px) {
+  .Footer {
+    padding-bottom: 50px;
+  }
+
+}
