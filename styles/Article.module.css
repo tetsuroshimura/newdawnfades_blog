@@ -112,8 +112,12 @@
   font-size: clamp(1.8rem, 1.743rem + 0.29vw, 2rem);
   font-weight: 500;
   margin: 100px 0 30px 0;
+  font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 .Article_Body h3 {
+  font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: clamp(1.6rem, 1.527rem + 0.36vw, 1.8rem);
   font-weight: 500;
   margin: 0;
