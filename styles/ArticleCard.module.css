@@ -30,6 +30,7 @@
   margin: 0;
   grid-column: 2 / 11;
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 
