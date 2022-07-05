@@ -1,19 +1,28 @@
 .Footer {
-  padding: 1vw 4vw;
+  padding: 3vw 5vw;
 }
 .Footer_Inner {
   min-width: 0;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
   position: relative;
-  padding: 4vw 1vw;
+}
+
+ul.Footer_Text_Block {
+  list-style: none;
+  padding: 0;
+}
+
+li.Footer_Text_List {
+  font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: clamp(1.2rem, 1.114rem + 0.43vw, 1.5rem);
 }
 
 .SiteName {
+  font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   display: flex;
-  align-items: center;
-  color: #333;
+  color: #000000;
   text-decoration: none;
 }
 .SiteName:hover .SiteName_Text {
@@ -35,7 +44,7 @@
   border-radius: 4px;
 }
 .SiteName_Text {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 1.114rem + 0.43vw, 1.5rem);
 }
 .Link {
   border-left: 1px solid #e5e5e5;
