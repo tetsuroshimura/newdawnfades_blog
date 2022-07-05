@@ -11,7 +11,7 @@
   margin-bottom: calc(80px + 2vw);
 }
 .Article_Title {
-  font-size: clamp(2rem, 1.886rem + 0.57vw, 2.4rem);
+  font-size: clamp(1.8rem, 1.629rem + 0.86vw, 2.4rem);
   line-height: 1.6;
   font-weight: 500;
   margin: 0 0 16px 0;
@@ -54,7 +54,7 @@
 .Article_Body_Wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  row-gap: 1em;
+  gap: 1rem;
 }
 
 @media (max-width: 960px) {
