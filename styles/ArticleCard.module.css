@@ -12,13 +12,10 @@
 }
 
 .Article_Inner {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 1rem;
   margin-bottom: 40px;
 }
 .Article_Title {
-  font-size: clamp(1.8rem, 1.743rem + 0.29vw, 2rem);
+  font-size: clamp(1.8rem, 1.629rem + 0.86vw, 2.4rem);
   font-weight: 500;
   line-height: 1.8;
   font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,
@@ -28,7 +25,10 @@
   -webkit-font-feature-settings: "palt" 1;
   font-kerning: normal;
   margin: 0;
-  grid-column: 2 / 11;
+  line-height: 1.5;
+}
+
+.Article_Title:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -51,10 +51,7 @@
     margin-bottom: 20px;
   }
   .Article_Inner {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .Article_Link {
     margin-bottom: 30px;
@@ -62,7 +59,7 @@
   .Article_Title {
     font-size: 1.8rem;
     grid-column: 3 / 9;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .Article_Data {
     font-size: 1.2rem;

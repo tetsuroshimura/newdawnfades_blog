@@ -11,6 +11,7 @@ export function ArticleCard({ article }: { article: Content & Article }) {
       <Link href={`/article/${article.slug}`}>
         <a href="#" className={styles.Article_Link}>
           <div className={styles.Article_Inner}>
+            <h2 className={styles.Article_Title}>{article.title}</h2>
             <div className={styles.Article_Data}>
               <div className={styles.Article_DataText}>
                 <time
@@ -21,7 +22,6 @@ export function ArticleCard({ article }: { article: Content & Article }) {
                 </time>
               </div>
             </div>
-            <h2 className={styles.Article_Title}>{article.title}</h2>
           </div>
         </a>
       </Link>
