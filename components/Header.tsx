@@ -28,16 +28,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
       <div className={styles.Header_Inner}>
         <Link href="/">
           <a href="#" className={styles.Title}>
-            {app.icon?.type === "emoji" && (
-              <span className={styles.Title_Icon}>{app.icon.value}</span>
-            )}
-            {app.icon?.type === "image" && (
-              <span className={styles.Title_Icon}>
-                <img src={app.icon.value} alt="" />
-              </span>
-            )}
-            <div className={styles.Title_Text_Underline}></div>
-            <div className={styles.Title_Text}>{app.name || app.uid || ""}</div>
+            <div className={styles.Title_Text}>NEW <br className={styles.Sp}></br>DAWN <br className={styles.Sp}></br>FADES</div>
           </a>
         </Link>
         <div className={styles.Search}>

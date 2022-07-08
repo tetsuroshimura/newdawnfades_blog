@@ -1,5 +1,4 @@
 .Header {
-  background: #fff;
   position: sticky;
   top: 0;
   width: 100%;
@@ -8,9 +7,16 @@
   flex-shrink: 0;
   padding: 1vw 5vw;
 }
+.Sp {
+  display:none;
+}
 @media (max-width: 960px) {
   .Header {
     padding: 20px 20px;
+    position: static;
+  }
+  .Sp { 
+    display:inline;
   }
 }
 .Header_Inner {
@@ -29,7 +35,7 @@
   line-height: 1;
   color: #000000;
   text-decoration: none;
-  font-family: "Ghost",'Noto Sans JP',"Segoe UI Emoji", "Helvetica Neue", Arial,
+  font-family: "Ndf",'Noto Sans JP',"Segoe UI Emoji", "Helvetica Neue", Arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 .Title_Icon {
@@ -81,12 +87,19 @@
 .Title_Text {
   margin: 0;
   padding: 0;
-  font-size: clamp(2rem, 1.886rem + 0.57vw, 2.4rem);
+  font-size: clamp(4rem, 3.714rem + 1.43vw, 5rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: normal;
   font-feature-settings: "palt" 1;
+  margin-left: -0.2rem;
+}
+
+@media (max-width: 960px) {
+  .Title_Text {
+    font-size: 3rem;
+  }
 }
 
 .Search {

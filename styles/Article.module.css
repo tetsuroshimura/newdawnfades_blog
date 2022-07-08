@@ -24,8 +24,16 @@
 }
 
 @media (max-width: 960px) {
+  .Article {
+    margin: 1vw 5vw;
+    margin-top: calc(100px + 2vw);
+  }
   .Article_Title {
     font-size: 1.8rem;
+  }
+  .Article_Header {
+    margin: 0 0 24px 0;
+    margin-bottom: calc(50px + 2vw);
   }
 } 
 .Article_Avatar {
@@ -138,6 +146,12 @@
 
 .Article_Body p {
   margin: 0 0 24px 0;
+}
+
+@media (max-width: 960px) {
+  .Article_Body h2 {
+    margin: 100px 0 20px 0;
+  }
 }
 
 
