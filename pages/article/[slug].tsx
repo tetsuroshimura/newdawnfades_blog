@@ -134,7 +134,7 @@ export default function ArticlePage({
           ></div>
         </div>
         <div className={styles.Article_Navigation}>
-            <a href="#" className={styles.Article_Navigation_Text}>
+            <a href="/" className={styles.Article_Navigation_Text}>
             ← BACK
             </a>
         </div>

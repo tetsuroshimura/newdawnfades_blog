@@ -28,7 +28,7 @@ export function Header({ app }: { app: AppMeta }): JSX.Element {
       <div className={styles.Header_Inner}>
         <Link href="/">
           <a href="#" className={styles.Title}>
-            <div className={styles.Title_Text}>NEW <br className={styles.Sp}></br>DAWN <br className={styles.Sp}></br>FADES</div>
+            <div className={styles.Title_Text}>New Dawn Fades</div>
           </a>
         </Link>
         <div className={styles.Search}>
