@@ -133,6 +133,11 @@ export default function ArticlePage({
             dangerouslySetInnerHTML={annotation}
           ></div>
         </div>
+        <div className={styles.Article_Navigation}>
+            <a href="#" className={styles.Article_Navigation_Text}>
+            ← BACK
+            </a>
+        </div>
       </article>
     </Layout>
   );
