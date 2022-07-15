@@ -7,6 +7,7 @@ import { fetchApp, fetchArticles, fetchCurrentArticle } from "../../lib/api";
 import { formatDate } from "../../lib/date";
 import { Article } from "../../types/article";
 import { htmlToText } from "html-to-text";
+import Link from 'next/link';
 
 export default function ArticlePage({
   app,
@@ -134,9 +135,9 @@ export default function ArticlePage({
           ></div>
         </div>
         <div className={styles.Article_Navigation}>
-            <a href="/" className={styles.Article_Navigation_Text}>
-            ← BACK
-            </a>
+          <Link href="/" >
+            <a className={styles.Article_Navigation_Text}>← BACK</a> 
+          </Link>
         </div>
       </article>
     </Layout>
