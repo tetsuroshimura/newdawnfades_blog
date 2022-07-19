@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "../styles/Header.module.css";
-import { About } from '../pages/about';
 
 export function Header({ app }: { app: AppMeta }): JSX.Element {
   const router = useRouter();
