@@ -18,16 +18,8 @@ export function Footer({ app }: { app: AppMeta }) {
         </div>
         <Link href="/">
           <a href="#" className={styles.SiteName}>
-            {app.icon?.type === "emoji" && (
-              <span className={styles.SiteName_Icon}>{app.icon.value}</span>
-            )}
-            {app.icon?.type === "image" && (
-              <span className={styles.SiteName_Icon}>
-                <img src={app.icon.value} alt="" />
-              </span>
-            )}
             <div className={styles.SiteName_Text}>
-              {app.name || app.uid || ""}
+              New Dawn Fades
             </div>
           </a>
         </Link>
