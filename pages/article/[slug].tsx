@@ -92,10 +92,8 @@ export default function ArticlePage({
     if (currentArticle?.headerImage) {
       return currentArticle.headerImage.src;
     }
-    return {
-      __html: "",
-    };
-  }, [currentArticle?.annotation]);
+    return currentArticle.headerImage.src;
+  }, [currentArticle?.headerImage]);
 
   const authorIntroduction = useMemo(() => {
     if (currentArticle?.author?.biography) {
