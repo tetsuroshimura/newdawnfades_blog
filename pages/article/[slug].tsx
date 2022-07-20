@@ -8,6 +8,7 @@ import { formatDate } from "../../lib/date";
 import { Article } from "../../types/article";
 import { htmlToText } from "html-to-text";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ArticlePage({
   app,
@@ -59,6 +60,17 @@ export default function ArticlePage({
     return currentArticle?.author?.fullName || "NO NAME";
   }, [currentArticle?.author?.fullName]);
 
+  const annotation = useMemo(() => {
+    if (currentArticle?.annotation) {
+      return {
+        __html: currentArticle.annotation,
+      };
+    }
+    return {
+      __html: "",
+    };
+  }, [currentArticle?.annotation]);
+
   const publishDate = useMemo(() => {
     return currentArticle?._sys?.createdAt
       ? formatDate(currentArticle._sys.createdAt)
@@ -76,11 +88,9 @@ export default function ArticlePage({
     };
   }, [currentArticle?.body]);
 
-  const annotation = useMemo(() => {
-    if (currentArticle?.annotation) {
-      return {
-        __html: currentArticle.annotation,
-      };
+  const headerImage = useMemo(() => {
+    if (currentArticle?.headerImage) {
+      return currentArticle.headerImage.src;
     }
     return {
       __html: "",
@@ -111,33 +121,40 @@ export default function ArticlePage({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article className={styles.Article}>
-        <div className={styles.Article_Header}>
-          <h1 className={styles.Article_Title}>
-            {currentArticle?.title || ""}
-          </h1>
+        <div className={styles.Article_Header_Image}>
+          <img src={headerImage} alt='Header Image' />
         </div>
-        <div className={styles.Article_Body_Wrapper}>
-          <div className={styles.Article_Data}>
-            <time
-              dateTime={currentArticle?._sys?.createdAt}
-              className={styles.Article_Date}
-            >
-              {publishDate}
-            </time>
+        <div className={styles.Article_Wrapper}>
+          <div className={styles.Article_Wrapper_Inner}>
+            <div className={styles.Article_Header}>
+              <h1 className={styles.Article_Title}>
+                {currentArticle?.title || ""}
+              </h1>
+            </div>
+            <div className={styles.Article_Body_Wrapper}>
+              <div className={styles.Article_Data}>
+                <time
+                  dateTime={currentArticle?._sys?.createdAt}
+                  className={styles.Article_Date}
+                >
+                  {publishDate}
+                </time>
+              </div>
+              <div
+                className={styles.Article_Body}
+                dangerouslySetInnerHTML={body}
+              ></div>
+              <div
+                className={styles.Article_Annotation}
+                dangerouslySetInnerHTML={annotation}
+              ></div>
+            </div>
+            <div className={styles.Article_Navigation}>
+              <Link href="/" >
+                <a className={styles.Article_Navigation_Text}>← BACK</a> 
+              </Link>
+            </div>
           </div>
-          <div
-            className={styles.Article_Body}
-            dangerouslySetInnerHTML={body}
-          ></div>
-          <div
-            className={styles.Article_Annotation}
-            dangerouslySetInnerHTML={annotation}
-          ></div>
-        </div>
-        <div className={styles.Article_Navigation}>
-          <Link href="/" >
-            <a className={styles.Article_Navigation_Text}>← BACK</a> 
-          </Link>
         </div>
       </article>
     </Layout>

@@ -1,6 +1,6 @@
 .Articles {
   margin: 0 auto;
-  padding: 1vw 5vw;
+  padding: 1vw 2vw;
   margin-top: calc(200px + 2vw);
 }
 
@@ -21,6 +21,7 @@
 @media (max-width: 960px) {
   .Articles {
     margin-top: 100px;
+    padding: 20px 20px;
   }
 }
 

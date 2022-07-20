@@ -5,7 +5,7 @@
   box-sizing: border-box;
   z-index: 10;
   flex-shrink: 0;
-  padding: 1vw 5vw;
+  padding: 1vw 2vw;
 }
 .Sp {
   display:none;
@@ -13,7 +13,6 @@
 @media (max-width: 960px) {
   .Header {
     padding: 20px 20px;
-    position: static;
   }
   .Sp { 
     display:inline;

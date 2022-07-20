@@ -10,6 +10,7 @@ export interface Article {
     description: string;
     ogImage: { src: string } | null;
   };
+  headerImage: { src: string } | null;
   body: string;
   annotation: string;
   coverImage: { src: string } | null;
