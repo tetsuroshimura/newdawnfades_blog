@@ -1,6 +1,6 @@
 .Footer {
   padding: 5vw 2vw;
-  padding-top: 10vw;
+  padding-top: 20vw;
   background-color: #fff;
 }
 .Footer_Inner {
@@ -30,6 +30,7 @@ li.Footer_Text_List {
   font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,
   "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: clamp(1.2rem, 1.114rem + 0.43vw, 1.5rem);
+  line-height: 2;
 }
 
 .SiteName {
@@ -38,6 +39,7 @@ li.Footer_Text_List {
   display: flex;
   color: #000000;
   text-decoration: none;
+  font-size: clamp(1.2rem, 1.114rem + 0.43vw, 1.5rem);
 }
 .SiteName:hover .SiteName_Text {
   text-decoration: underline;
@@ -60,6 +62,9 @@ li.Footer_Text_List {
 .SiteName_Text {
   font-size: clamp(1.2rem, 1.114rem + 0.43vw, 1.5rem);
 }
+.Footer_Text_Song {
+  text-decoration: underline;
+}
 .Link {
   border-left: 1px solid #e5e5e5;
   padding: 0 0 0 16px;
@@ -78,7 +83,15 @@ li.Footer_Text_List {
 @media (max-width: 960px) {
   .Footer {
     padding: 50px 20px;
-    padding-top: 100px;
+    padding-top: 200px;
   }
-
+  .Footer_Inner {
+    display: block;
+  }
+  .Footer_Text_block03 {
+    margin-top: 20px;
+  }
+  .Footer_Text_block04 {
+    margin-top: 50px;
+  }
 }

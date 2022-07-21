@@ -16,18 +16,56 @@ export function Footer({ app }: { app: AppMeta }) {
         </div>
         <div className={styles.Footer_Text_block02}>
           <ul className={styles.Footer_Text_Block}>
-            <li className={styles.Footer_Text_List}>Design : Shimura Tetsuro</li>
+            <li className={styles.Footer_Text_List}>Design/Develop : Shimura Tetsuro</li>
             <li className={styles.Footer_Text_List}>URL : https://www.newdawnfades.today/</li>
           </ul>
         </div>
         <div className={styles.Footer_Text_block03}>
           <ul className={styles.Footer_Text_Block}>
-            <li className={styles.Footer_Text_List}>Pixies / Debaser</li>
-            <li className={styles.Footer_Text_List}>The Strokes / Last Night</li>
-            <li className={styles.Footer_Text_List}>DJ seinfeld / U</li>
-            <li className={styles.Footer_Text_List}>Jam City / Unhappy</li>
-            <li className={styles.Footer_Text_List}>Black Flag / Rise Above</li>
-            <li className={styles.Footer_Text_List}>Big Thief / Change</li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=PVyS9JwtFoQ">
+                <a target="_blank" className={styles.Footer_Text_Song}>
+                  Pixies / Debaser
+                </a>
+              </Link>
+            </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=TOypSnKFHrE">
+                <a target="_blank" className={styles.Footer_Text_Song}>
+                  The Strokes / Last Night
+                </a>
+              </Link>
+            </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=g6eu1Wb8CVE">
+                <a target="_blank" className={styles.Footer_Text_Song}>DJ seinfeld / U</a>
+              </Link>
+            </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=yjC4qXiBRu4">
+                <a target="_blank" className={styles.Footer_Text_Song}>Black Country, New Road / Concorde</a>
+              </Link>
+            </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=dBuOJF_rX40">
+                <a target="_blank" className={styles.Footer_Text_Song}>Hosegirl / Anti-glory</a>
+              </Link>
+            </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=VMD2OGlgAEg">
+                <a target="_blank" className={styles.Footer_Text_Song}>Big Thief / Red Moon</a>
+              </Link>
+            </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=ND7sUqIaMIk">
+                <a target="_blank" className={styles.Footer_Text_Song}>Rachika Nayar / The Trembling of Glass</a>
+              </Link>
+            </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=8q79xq2aNlU">
+                <a target="_blank" className={styles.Footer_Text_Song}>PASOCOM MUSIC CLUB / Panorama</a>
+              </Link>
+            </li>
           </ul>
         </div>
         <div className={styles.Footer_Text_block04}>
