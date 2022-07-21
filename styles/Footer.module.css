@@ -1,5 +1,6 @@
 .Footer {
-  padding: 3vw 5vw;
+  padding: 5vw 2vw;
+  background-color: #fff;
 }
 .Footer_Inner {
   min-width: 0;
@@ -63,7 +64,7 @@ li.Footer_Text_List {
 
 @media (max-width: 960px) {
   .Footer {
-    padding-bottom: 50px;
+    padding: 50px 20px;
   }
 
 }

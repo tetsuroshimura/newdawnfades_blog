@@ -11,7 +11,7 @@
   background-color: #fff;
 }
 .Article_Wrapper_Inner {
-  margin: 2vw 2vw;
+  margin: 0 2vw;
 }
 .Article_Header_Image {
   top: 0;
@@ -52,7 +52,7 @@
     margin-top: -60px;
   }
   .Article_Wrapper_Inner {
-    margin: 20px 20px;
+    margin: 0 20px;
   }
   .Article_Title {
     font-size: 1.8rem;
@@ -250,7 +250,7 @@
 @media (max-width: 960px) {
   .Article_Navigation {
     display: block;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .Article_Navigation_Text {
     font-size: 2rem;
