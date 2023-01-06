@@ -1,5 +1,5 @@
 import { AppMeta, Content } from "newt-client-js";
-import styles from "../../styles/Article.module.css";
+import styles from "../../styles/Article.module.scss";
 import Head from "next/head";
 import { useMemo } from "react";
 import { Layout } from "../../components/Layout";
@@ -120,7 +120,7 @@ export default function ArticlePage({
       </Head>
       <article className={styles.Article}>
         <div className={styles.Article_Header_Image}>
-          <img src={headerImage} alt='Header Image' />
+          <Image src={headerImage} alt='Header Image' layout='fill' />
         </div>
         <div className={styles.Article_Wrapper}>
           <div className={styles.Article_Wrapper_Inner}>

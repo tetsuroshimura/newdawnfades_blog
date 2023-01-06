@@ -23,10 +23,14 @@
   position: fixed;
   z-index: -100;
 }
-.Article_Header_Image img {
-  width:100%;
-  height: 70vh;
-  object-fit: cover;
+.Article_Header_Image {
+  span {
+    img {
+      width:100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+  }
 }
 .Article_Header {
   margin: 0 0 24px 0;
