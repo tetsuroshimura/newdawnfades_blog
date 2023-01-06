@@ -66,6 +66,16 @@ export function Footer({ app }: { app: AppMeta }) {
                 <a target="_blank" className={styles.Footer_Text_Song}>PASOCOM MUSIC CLUB / Panorama</a>
               </Link>
             </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=xdHS1sbV5xw">
+                <a target="_blank" className={styles.Footer_Text_Song}>My Bloody Valentine / To Here Knows When</a>
+              </Link>
+            </li>
+            <li className={styles.Footer_Text_List}>
+              <Link href="https://www.youtube.com/watch?v=pSUydWEqKwE">
+                <a target="_blank" className={styles.Footer_Text_Song}>NewJeans / Ditto</a>
+              </Link>
+            </li>
           </ul>
         </div>
         <div className={styles.Footer_Text_block04}>
