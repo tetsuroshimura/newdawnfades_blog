@@ -37,23 +37,7 @@
   font-family: 'Ghost','Noto Serif JP', "Helvetica Neue", Arial,
   "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
-.Title_Icon {
-  width: 20px;
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  flex-shrink: 0;
-  margin: 0 10px -2px 0;
-}
-.Title_Icon img {
-  width: 26px;
-  height: 26px;
-  object-fit: cover;
-  font-family: "object-fit: cover"; /* IE11 */
-  border-radius: 4px;
-}
+
 .Title_Button {
   width: 34px;
   height: 34px;
@@ -86,7 +70,7 @@
 .Title_Text {
   margin: 0;
   padding: 0;
-  font-size: clamp(2rem, 1.855rem + 0.73vw, 2.4rem);
+  font-size: clamp(2rem, 1.723rem + 1.13vw, 3rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -97,7 +81,7 @@
 
 @media (max-width: 960px) {
   .Title_Text {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 .Header_About {
