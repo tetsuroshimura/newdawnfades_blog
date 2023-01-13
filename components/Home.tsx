@@ -8,6 +8,7 @@ import { Category } from "../types/category";
 import { ArticleCard } from "../components/ArticleCard";
 import { Article } from "../types/article";
 import { Pagination } from "../components/Pagination";
+import Image from 'next/image';
 
 import dynamic from 'next/dynamic'
 import p5Types from 'p5'

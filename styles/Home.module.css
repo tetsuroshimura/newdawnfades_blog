@@ -2,6 +2,10 @@
   margin: 0 auto;
   padding: 1vw 2vw;
   margin-top: calc(200px + 2vw);
+  background-image: url(/draw02.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
 }
 
 .Articles_Inner_Wrapper {
@@ -22,6 +26,10 @@
   .Articles {
     margin-top: 100px;
     padding: 20px 20px;
+    background-image: url(/draw02sp.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center;
   }
 }
 
