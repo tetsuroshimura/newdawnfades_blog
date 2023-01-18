@@ -1,7 +1,12 @@
 .Footer {
   padding: 5vw 2vw;
-  padding-top: 20vw;
+  margin-top: 20vw;
+  padding-bottom: 22vw;
   background-color: #fff;
+  background-image: url(/bg_draw_crayon.jpg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 .Footer_Inner {
   display: grid;
@@ -83,7 +88,7 @@ li.Footer_Text_List {
 @media (max-width: 960px) {
   .Footer {
     padding: 50px 20px;
-    padding-top: 200px;
+    margin-top: 200px;
   }
   .Footer_Inner {
     display: block;
