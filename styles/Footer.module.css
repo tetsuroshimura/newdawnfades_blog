@@ -89,6 +89,10 @@ li.Footer_Text_List {
   .Footer {
     padding: 50px 20px;
     margin-top: 200px;
+    background-image: url(/bg_draw_crayon_sp.jpg);
+    background-position: top 100px right;
+    background-size: 80%;
+    padding-bottom: 200px;
   }
   .Footer_Inner {
     display: block;
